@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> JS cheatsheet </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <link href="style/JScheatsheet.css" rel="stylesheet" />
+    <!--//for creating banner photo I watched https://www.youtube.com/watch?v=bG5r5TM5e2o -->
+    <!--//for creating the animation I watched https://www.youtube.com/watch?v=R9qWaSahUdE and change its animation to transform -->
+    <!--//All icons from flat icon: https://www.flaticon.com/ which was free-->
+    <!--//I read media queries from https://www.w3schools.com/css/css_rwd_mediaqueries.asp and customize it to my website -->
+</head>
+<body>
+    <div class="row banner">
+        <div class="container">
+            <div class="banner-wrapper">
+                <a href="index.html" class="back">back </a>
+                <img src="image/JScheatsheet.png" class="banner-img">
+                <div class="banner-bg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row">
+            <div class="item">
+                <div class="title-wrapper">
+                    <h2 class="title">Document</h2>
+                </div>
+                <ul>
+                    <li class="item-li">
+                        <p>
+                            Displaying the nodes of a website
+                        </p>
+                        <span>console.dir(document)</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Get the element with id="example"
+                        </p>
+                        <span>document.getElementById("example");</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Get all elements with example class name
+                        </p>
+                        <span>document.getElementsByClassName("example")</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Get all elements with the example name
+                        </p>
+                        <span>document.getElementsByName("example")</span>
+                    </li>
+
+                    <li class="item-li">
+                        <p>
+                            Get all elements with LI tag name:
+                        </p>
+                        <span>document.getElementsByTagName("LI")</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            showing the type of a variable
+                        </p>
+                        <span>typeof variable</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            parses a value as a string and returns the first integer
+                        </p>
+                        <span>parseInt(value);</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            parses a value as a string and returns the first number
+                        </p>
+                        <span>parseFloat(value);</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="title-wrapper">
+                    <h2 class="title">Dialogs / Output</h2>
+                </div>
+                <ul>
+                    <li class="item-li">
+                        <p>
+                            an alert box pops up
+                        </p>
+                        <span>alert("sometext")</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            if you want the user to verify or accept something.returns true / flase
+                        </p>
+                        <span>confirm("sometext")</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            if you want the user to input a value before entering a page
+                        </p>
+                        <span>let person = prompt("Please enter your name:")</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            The innerHTML property defines the HTML content
+                        </p>
+                        <span>document.getElementById("demo").innerHTML = 5 + 6;</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            document.write() after an HTML document is loaded, will delete all existing HTML
+                        </p>
+                        <span>document.write(5 + 6);</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            display data on the console
+                        </p>
+                        <span>console.log(5 + 6);</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="title-wrapper">
+                    <h2 class="title">Events</h2>
+                </div>
+                <ul>
+                    <li class="item-li">
+                        <p>
+                            The event happens when the ïtem is clicked
+                        </p>
+                        <span> onclick="alert('Hello')"</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            The event happens when an HTML element has been changed
+                        </p>
+                        <span>.onchange()</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            The event happens when the user moves the mouse over an HTML element
+                        </p>
+                        <span>.onmouseover()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            The event happens when the user moves the mouse away from an HTML element
+                        </p>
+                        <span>.onmouseout()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            The event happens when the user pushes a keyboard key
+                        </p>
+                        <span>.onkeydown()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            The event happens when the browser has finished loading the page
+                        </p>
+                        <span>.onload()</span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="item">
+                <div class="title-wrapper">
+                    <h2 class="title">String</h2>
+                </div>
+                <ul>
+                    <li class="item-li">
+                        <p>
+                            for itrating characters in string
+                        </p>
+                        <span>
+                            for(let i in str){ }
+                            <br />for(let v in str){ }
+                        </span>
+                    </li>
+
+
+                    <li class="item-li">
+                        <p>
+                            Showing the content of string regarding its index
+                        </p>
+                        <span>str[0]</span>
+                    </li>
+
+                    <li class="item-li">
+                        <p>
+                            Showing the content of string regarding its index
+                        </p>
+                        <span>str.charAt(0)</span>
+                    </li>
+
+                    <li class="item-li">
+                        <p>
+                            Showing the length of string
+                        </p>
+                        <span>str.length</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            splits a string into an array of substrings
+                        </p>
+                        <span>str.split(' ')</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Extracts a part of a string. Slice the first 5 position
+                        </p>
+                        <span>
+                            str.slice(start, end)
+                            <br>
+                            str.slice(0, 5);
+                        </span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            joins two or more strings
+                        </p>
+                        <span>str.join(' ')</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            recerse the string
+                        </p>
+                        <span>str.reverse()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            converting to string type
+                        </p>
+                        <span>str.tostring()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Capitalize all characters of a string
+                        </p>
+                        <span>str.toUpperCase()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Removing the first and last spaces in a string
+                        </p>
+                        <span>str.trim()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Removing the spaces between words in a string
+                        </p>
+                        <span>
+                            while(str != str.replace('  ',' ')){
+                            <br />
+                            str=str.replace('  ',' ')
+                            <br />
+                            }
+                            <br />
+                            str.replace("Mahya","Mahbub");
+                        </span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Returns the position of the first occurrence of "Mahya" in the string. (Searching)
+                        </p>
+                        <span>
+                            str="I am Mahya Yousefi";
+                            <br />
+                            str.indexOf("Mahya")
+                        </span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Returns the position of the last occurrence of "am" in the string. (Searching)
+                        </p>
+                        <span>
+                            str="I am Mahya Yousefi and I am 28";
+                            <br />
+                            str.lastIndexOf("am");
+                        </span>
+                    </li>
+
+                    <li class="item-li">
+                        <p>
+                            Check if a string ends with "28" and returns true / false. (Searching)
+                        </p>
+                        <span>
+                            str="I am Mahya Yousefi and I am 28";
+                            <br />
+                            str.endsWith("28");
+                        </span>
+                    </li>
+
+                    <li class="item-li">
+                        <p>
+                            Check if a string starts with "I" and returns true / false. (Searching)
+                        </p>
+                        <span>
+                            str="I am Mahya Yousefi and I am 28";
+                            <br />
+                            str.startsWith("I");
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="title-wrapper">
+                    <h2 class="title">Array</h2>
+                </div>
+                <ul>
+                    <li class="item-li">
+                        <p>
+                            show the length of array
+                        </p>
+                        <span>Arr.length</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            for itrating items on array
+                        </p>
+                        <span>
+                            for(let i in Arr){
+                            }
+                            for(let v in Arr){
+                            }
+                        </span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Adding one item to the last of an array
+                        </p>
+                        <span>Arr.push("Lava")</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            removing the last item an array
+                        </p>
+                        <span>Arr.pop()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Adding one item to the first of an array
+                        </p>
+                        <span>Arr.unshift("Lava")</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            removing an item from an array
+                        </p>
+                        <span>Arr.shift()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            seprating one item from an erray which start from 0 and end in 2
+                        </p>
+                        <span>
+                            Arr.slice(start, end)
+                            <br />
+                            Arr.slice(0, 2)
+                        </span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            removing from an erray which start from 0 and replace "ABC",123,"DEF" instead of 1<i>(DESTRUCTIVE)</i>
+                        </p>
+                        <span>
+                            Arr.splice(start, length)
+                            <br />
+                            Arr.splice(0, 1,"ABC",123,"DEF")
+                        </span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Sorting <i>(DESTRUCTIVE)</i>
+                        </p>
+                        <span>Arr.sort()</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Concat
+                        </p>
+                        <span>Arr1.Concat(Arr2)</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Finding the index of 9 - it can be used for seaching
+                        </p>
+                        <span>Arr.indexof(9)</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            Finding the last index of 9 - it can be used for seaching
+                        </p>
+                        <span>Arr.lastIndexOf(9)</span>
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            reversing <i>(DESTRUCTIVE)</i>
+                        </p>
+                        <span>Arr.reverse()</span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div class="item">
+                <div class="title-wrapper">
+                    <h2 class="title">Math</h2>
+                </div>
+                <ul>
+                    <li class="item-li">
+                        <p>
+                            returns the largest integer less than or equal to a given number
+                        </p>
+                        <span>Math.floor()</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            returns random numbers between 1 to 100
+                        </p>
+                        <span>Math.random()*101</span>
+
+                    </li>
+                    <li class="item-li">
+                        <p>
+                            returns the base to the exponent power, as in base ^ exponent
+                        </p>
+                        <span>Math.pow(2,5)</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
